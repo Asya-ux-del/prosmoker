@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSmoker - Кафе Томленого Мяса</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ШАПКА САЙТА (HEADER) -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Ссылка на вырезанный логотип из image.png -->
+                <img src="logo.png" alt="ProSmoker Logo" class="logo-img">
+                <span class="halal-badge" data-lng="halal">100% ХАЛЯЛЬ</span>
+            </div>
+            
+            <nav>
+                <a href="index.html" class="active" data-lng="nav-home">Главная</a>
+                <a href="menu.html" data-lng="nav-menu">Меню</a>
+                <a href="#contacts" data-lng="nav-contacts">Контакты</a>
+            </nav>
+
+            <div class="controls">
+                <button id="theme-toggle" class="control-btn" title="Сменить тему">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button id="lang-toggle" class="control-btn">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ ЭКРАН (HERO SECTION) -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 data-lng="hero-title">Искусство Томленого Мяса</h1>
+            <p data-lng="hero-subtitle">Традиционное техасское копчение в самом сердце города. Только Premium Halal.</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn" data-lng="hero-btn">Открыть меню</a>
+                <a href="#booking" class="btn btn-outline" data-lng="hero-book-btn">Забронировать столик</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ИНТЕРАКТИВНАЯ ФИШКА: КЛИКАБЕЛЬНЫЙ СМОКЕР -->
+    <section class="interactive-smoker-section">
+        <div class="container smoker-flex">
+            <div class="smoker-text">
+                <h2 data-lng="smoker-click-title">Загляни в наш смокер!</h2>
+                <p data-lng="smoker-click-desc">Нажми на смокер, чтобы приоткрыть крышку и почувствовать этот легендарный аромат 18-часового томления мяса на фруктовой щепе.</p>
+            </div>
+            <div class="smoker-container" id="smoker-trigger">
+                <!-- Элементы дыма (генерируются через JS, но здесь база) -->
+                <div class="smoke-zone" id="smoke-zone"></div>
+                <div class="smoker-graphics">
+                    <div class="smoker-lid"></div>
+                    <div class="smoker-body">
+                        <div class="smoker-fire"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФИШКИ КАФЕ (FEATURES) -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title" data-lng="feat-title">Наши Фишки</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-hourglass-half"></i></div>
+                    <h3 data-lng="feat-1-title">18 Часов Томления</h3>
+                    <p data-lng="feat-1-desc">Мы томим мясо при низких температурах (Low & Slow), чтобы оно буквально таяло во рту.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-fire-smoke"></i></div>
+                    <h3 data-lng="feat-2-title">Натуральный Смокер</h3>
+                    <p data-lng="feat-2-desc">Используем только натуральную щепу фруктовых деревьев без жидкого дыма и химии.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-certificate"></i></div>
+                    <h3 data-lng="feat-3-title">Строгий Халяль</h3>
+                    <p data-lng="feat-3-desc">Все мясные продукты имеют сертифицированное происхождение Halal. Чистота и качество.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ГАЛЕРЕЯ МЕСТ / СТОЛИКИ (ATMOSPHERE) -->
+    <section class="ambiance">
+        <div class="container">
+            <h2 class="section-title" data-lng="ambiance-title">Наш Уютный Зал</h2>
+            <p class="section-subtitle" data-lng="ambiance-subtitle">Выберите идеальное место для сочного обеда или атмосферного ужина</p>
+            <div class="ambiance-grid">
+                <div class="ambiance-card">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&auto=format&fit=crop" alt="Общий зал">
+                    <div class="ambiance-info">
+                        <h4 data-lng="zone-1">Основной Крафт-Зал</h4>
+                        <p data-lng="zone-1-desc">Атмосфера техасского барбекю с мягким светом и массивными деревянными столами.</p>
+                    </div>
+                </div>
+                <div class="ambiance-card">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&auto=format&fit=crop" alt="У окна">
+                    <div class="ambiance-info">
+                        <h4 data-lng="zone-2">Места у окна</h4>
+                        <p data-lng="zone-2-desc">Уютные столики для двоих с панорамным видом на вечерний город.</p>
+                    </div>
+                </div>
+                <div class="ambiance-card">
+                    <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=500&auto=format&fit=crop" alt="VIP зона">
+                    <div class="ambiance-info">
+                        <h4 data-lng="zone-3">Мягкая VIP-Зона</h4>
+                        <p data-lng="zone-3-desc">Закрытые зоны с комфортными диванами для больших компаний и семейных встреч.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА БРОНИРОВАНИЯ СТОЛИКА И ЗАКАЗА МЯСА -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-form-block">
+                    <h3 data-lng="book-form-title">Забронировать или Заказать</h3>
+                    <p data-lng="book-form-desc">Оставьте заявку, мы подготовим столик или соберем горячее мясо к вашему приходу!</p>
+                    <form action="#" onsubmit="event.preventDefault(); alert('Заявка успешно принята! Ждем вас!');">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-row">
+                            <select required>
+                                <option value="" disabled selected data-lng="form-action">Что вы хотите?</option>
+                                <option value="table" data-lng="form-opt-1">Бронь столика</option>
+                                <option value="meat" data-lng="form-opt-2">Заказать мясо (На вынос)</option>
+                                <option value="both" data-lng="form-opt-3">Столик + Мясо к приезду</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-full" data-lng="form-submit-btn">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФУТЕР (FOOTER) -->
+    <footer id="contacts">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <img src="logo.png" alt="ProSmoker Logo" class="logo-img-footer">
+                <p data-lng="footer-wish">С теплотой и дымком для каждого гостя. Желаем вам приятного аппетита и незабываемых гастрономических ощущений!</p>
+            </div>
+            <div>
+                <h4 data-lng="f-title-hours">Время работы</h4>
+                <p data-lng="footer-hours">Каждый день: 16:00 — 00:00</p>
+                <p data-lng="footer-halal-note" style="color: var(--accent-color); font-weight: bold; margin-top: 10px;">⚡ 100% HALAL PRODUCT</p>
+            </div>
+            <div>
+                <h4 data-lng="f-title-contacts">Контакты</h4>
+                <p><i class="fas fa-phone"></i> +996 (555) 123-456</p>
+                <p><i class="fas fa-envelope"></i> info@prosmoker.kg</p>
+                <p><i class="fas fa-map-marker-alt"></i> ул. Салиева, 41</p>
+            </div>
+            <div>
+                <h4 data-lng="f-title-social">Мы в соцсетях</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

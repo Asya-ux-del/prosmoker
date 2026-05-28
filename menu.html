@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSmoker - Меню</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.png" alt="ProSmoker Logo" class="logo-img">
+                <span class="halal-badge" data-lng="halal">100% ХАЛЯЛЬ</span>
+            </div>
+            <nav>
+                <a href="index.html" data-lng="nav-home">Главная</a>
+                <a href="menu.html" class="active" data-lng="nav-menu">Меню</a>
+                <a href="index.html#contacts" data-lng="nav-contacts">Контакты</a>
+            </nav>
+            <div class="controls">
+                <button id="theme-toggle" class="control-btn"><i class="fas fa-sun"></i></button>
+                <button id="lang-toggle" class="control-btn">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="menu-section">
+        <div class="container">
+            <h1 class="section-title" data-lng="menu-main-title">Наше Фирменное Меню</h1>
+            
+            <div class="book-container">
+                <button class="book-nav prev-btn" id="prev-page"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="book">
+                    <div class="book-page active" id="page-1">
+                        <div class="menu-page-content">
+                            <div class="category-title" data-lng="cat-meat">🔥 Томленое Мясо (Low & Slow)</div>
+                            <div class="menu-items-list">
+                                <div class="menu-item">
+                                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=150&auto=format&fit=crop" alt="Ребра">
+                                    <div class="item-info">
+                                        <h4><span data-lng="item-ribs">Сочные Говяжьи Ребра</span> <span class="price">1кг - 2500 c.</span></h4>
+                                        <p data-lng="desc-ribs">18 часов томления, фирменный сухой маринад (руб), глазурь BBQ.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="https://images.unsplash.com/photo-1623618151578-83b6329759ad?w=150&auto=format&fit=crop" alt="Брискет">
+                                    <div class="item-info">
+                                        <h4><span data-lng="item-brisket">Техасский Брискет</span> <span class="price">1кг - 3500 c.</span></h4>
+                                        <p data-lng="desc-brisket">Мраморная грудинка с идеальным черным кольцом копчения (Smoke Ring).</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?w=150&auto=format&fit=crop" alt="Лопатка">
+                                    <div class="item-info">
+                                        <h4><span data-lng="item-lamb">Томленая Лопатка Баранины</span> <span class="price">1кг - 2500 c.</span></h4>
+                                        <p data-lng="desc-lamb">Нежнейшее мясо молодого барашка, тает от одного прикосновения.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=150&auto=format&fit=crop" alt="Курица">
+                                    <div class="item-info">
+                                        <h4><span data-lng="item-chicken">Копченая Цыпа</span> <span class="price">750 c.</span></h4>
+                                        <p data-lng="desc-chicken">Половинка сочной цыпочки с хрустящей пикантной корочкой.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?w=150&auto=format&fit=crop" alt="Сэндвич">
+                                    <div class="item-info">
+                                        <h4><span data-lng="item-sandwich">Сэндвич с томленым мясом</span> <span class="price">350 c.</span></h4>
+                                        <p data-lng="desc-sandwich">Крафтовая булочка бриошь, рваная говядина, маринованный огурчик, свежие помидоры.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="category-title" style="margin-top:20px;" data-lng="cat-salads">🥗 Салаты</div>
+                            <div class="menu-items-list">
+                                <div class="menu-item">
+                                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=150&auto=format&fit=crop" alt="Свежий">
+                                    <div class="item-info">
+                                        <h4><span data-lng="sal-fresh">Салат «Свежий»</span> <span class="price">250 c.</span></h4>
+                                        <p data-lng="desc-sal-fresh">Микс зелени, огурцы, помидоры.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=150&auto=format&fit=crop" alt="Нарезка">
+                                    <div class="item-info">
+                                        <h4><span data-lng="sal-veg">Овощная нарезка</span> <span class="price">250 c.</span></h4>
+                                        <p data-lng="desc-sal-veg">Хрустящие сезонные овощи крупной ресторанной нарезки.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=150&auto=format&fit=crop" alt="Руккола">
+                                    <div class="item-info">
+                                        <h4><span data-lng="sal-rucola">Руккола с томленым мясом</span> <span class="price">390 c.</span></h4>
+                                        <p data-lng="desc-sal-rucola">Пряная руккола, слайсы брискета, бальзамический крем-соус.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-number">Page 1 / 2</div>
+                        </div>
+                    </div>
+
+                    <div class="book-page" id="page-2">
+                        <div class="menu-page-content">
+                            <div class="menu-columns-two">
+                                <div>
+                                    <div class="category-title" data-lng="cat-bakery">🥖 Мучное</div>
+                                    <div class="menu-items-list">
+                                        <div class="menu-item">
+                                            <div class="item-info">
+                                                <h4><span data-lng="bread">Домашний Хлеб</span> <span class="price">40 c.</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item">
+                                            <div class="item-info">
+                                                <h4><span data-lng="potato">Картофель по-деревенски</span> <span class="price">150 c.</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-title" data-lng="cat-sauces">🍯 Дополнительно</div>
+                                    <div class="menu-items-list">
+                                        <div class="menu-item">
+                                            <div class="item-info">
+                                                <h4>💥 <span data-lng="sauce-bbq">Барбекю (BBQ)</span> <span class="price">50 c.</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item">
+                                            <div class="item-info">
+                                                <h4>🧀 <span data-lng="sauce-cheese">Сырный соус</span> <span class="price">50 c.</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item">
+                                            <div class="item-info">
+                                                <h4>🌶️ <span data-lng="sauce-jal">Халапеньо</span> <span class="price">60 c.</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="category-title" data-lng="cat-drinks">🥤 Напитки</div>
+                                    <div class="menu-items-list">
+                                        <div class="menu-item">
+                                            <div class="item-info">
+                                                <h4>Кола / Фанта / Спрайт</h4>
+                                                <p>1л — 120с | 0.45л — 80с | 0.25л — 60с</p>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item">
+                                            <div class="item-info">
+                                                <h4>Напиток Kinza <span class="price">90 c.</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item">
+                                            <div class="item-info">
+                                                <h4><span data-lng="ice-coffee">Холодный кофе</span> <span class="price">160 c.</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item">
+                                            <div class="item-info">
+                                                <h4><span data-lng="water">Вода</span> <span class="price">50 c.</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="category-title" style="margin-top:20px;" data-lng="cat-dessert">🍦 Десерты</div>
+                            <div class="menu-items-list">
+                                <div class="menu-item">
+                                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=150&auto=format&fit=crop" alt="Мороженое">
+                                    <div class="item-info">
+                                        <h4><span data-lng="ice-cream">Мороженое «Кайнар»</span> <span class="price">140 c.</span></h4>
+                                        <p data-lng="ice-cream-desc">Вкусы на выбор: Шоколад 🍫, Пломбир 🥛, Клубника 🍓</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-number">Page 2 / 2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="book-nav next-btn" id="next-page"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <div class="logo"><span class="logo-accent">Pro</span>Smoker</div>
+                <p data-lng="footer-wish">С теплотой и дымком для каждого гостя. Желаем вам приятного аппетита и незабываемых гастрономических ощущения!</p>
+            </div>
+            <div>
+                <h4 data-lng="f-title-hours">Время работы</h4>
+                <p data-lng="footer-hours">Каждый день: 16:00 — 00:00</p>
+                <p data-lng="footer-halal-note" style="color: var(--accent-color); font-weight: bold; margin-top: 10px;">⚡ 100% HALAL PRODUCT</p>
+            </div>
+            <div>
+                <h4 data-lng="f-title-contacts">Контакты</h4>
+                <p><i class="fas fa-phone"></i> +996 (555) 123-456</p>
+                <p><i class="fas fa-envelope"></i> info@prosmoker.kg</p>
+                <p><i class="fas fa-map-marker-alt"></i> ул. Салиева, 41</p>
+            </div>
+            <div>
+                <h4 data-lng="f-title-social">Мы в соцсетях</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
